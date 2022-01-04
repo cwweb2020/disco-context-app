@@ -20,9 +20,10 @@ const DiscoDoor = () => {
     const handleSubmit = (e) => {
         e.preventDefault()
        
-        if(age < '18'){
+        if(parseInt(age) < 18){
             setNoAdmited(true)
-        }else{
+        }else if(parseInt(age) >= 18)
+        {
             setNoAdmited(false)
         }
         handleLogin(age)
@@ -32,7 +33,7 @@ const DiscoDoor = () => {
     return (
         <>
            <section className='discoDoor' style={{minHeight: '100vh', padding: "40px 0"}}>
-               <h2 className='m-4 fs-4' onClick={() => window.location.reload()} style={{alignSelf: "baseline", cursor: "pointer"}}>Volver a puerta</h2> <h2>Disco</h2>
+               <h2 className='m-4 fs-4' onClick={() => window.location.reload()} style={{alignSelf: "baseline", cursor: "pointer"}}>Volver a puerta</h2> <h2>Nightclub</h2>
               {
                     noAdmited ? <NoEntry />  
              
