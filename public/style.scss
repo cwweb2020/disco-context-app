@@ -1,0 +1,61 @@
+*{
+    box-sizing: border-box;
+}
+
+.nav {
+    width: 100%;
+    height: 12vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+       h2 {
+           font-size: 25px;
+           color: white;
+           text-transform: capitalize;
+           letter-spacing: 1px;
+       }
+       .link-home {
+           color: white;
+           text-decoration: none;
+              font-size: 25px;
+              margin: 0 20px 0 0;
+       }
+}
+
+
+.footer {
+    width: 100%;
+    height: 16vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+       h2 {
+           font-size: 25px;
+           color: white;
+           text-transform: capitalize;
+           letter-spacing: 1px;
+       }
+}
+
+.discoDoor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.noentry {
+    padding: 25px 0 40px 0;
+
+      h2 {
+        text-align: center;
+        margin: 15px 0;
+        color: red;
+        font-style: italic;
+        font-family: monospace;
+      }
+}
